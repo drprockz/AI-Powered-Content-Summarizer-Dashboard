@@ -8,7 +8,7 @@ import SummaryPopup from './SummaryPopup';
 const ChatBox = ({ messages, onSendMessage, loading }) => {
   const [originalContent, setOriginalContent] = useState('');
   const [showPopup, setShowPopup] = useState(false);
-  const [summaryContent, setSummaryContent] = useState('');
+  const [setSummaryContent] = useState('');
 
   const handleScrapeComplete = (content) => {
     setOriginalContent(content);
